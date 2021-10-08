@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function color(){
+var x = document.getElementById("tex"); var color = x.value; x.style.backgroundColor = color;
+}
+function mobile(){
+var y = document.getElementById("mob"); var n = y.value;
+if (n.length<10){ y.style.backgroundColor = "green";
+}
+else if(n.length==10){ y.style.backgroundColor = "blue"; alert("Corect number");
+}
+}
+}
+</script>
+</head>
+<body id = "body">
+<input id ="tex" type="text" onmouseout="color()" placeholder="color">
+<br>
+<br>
+<input id = "mob" type="text" onkeyup="mobile()" placeholder="mobile number">
+</body>
+</html>
